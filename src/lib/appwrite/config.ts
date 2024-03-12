@@ -11,6 +11,10 @@ export const appwriteConfig = {
 };
 
 export const client = new Client();
+console.log("URL:", appwriteConfig.url);
+console.log("Project ID:", appwriteConfig.projectId);
+console.log("Database ID:", appwriteConfig.databaseId);
+// Add similar logging for other properties...
 
 client.setEndpoint(appwriteConfig.url);
 client.setProject(appwriteConfig.projectId);
